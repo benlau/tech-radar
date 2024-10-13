@@ -19,10 +19,10 @@ import { TechRadar, BlipItem, TechRadarConfig } from '@benlau/tech-radar';
 
 // Define your blip items
 const blipItems: BlipItem[] = [
-    { name: "React", category: "languages & frameworks", status: "adopt" },
-    { name: "Angular", category: "languages & frameworks", status: "assess" },
-    { name: "Svelte", category: "languages & frameworks", status: "trial" },
-    { name: "Vue", category: "languages & frameworks", status: "hold" },
+    { name: "React", category: "languages", status: "adopt" },
+    { name: "Angular", category: "languages", status: "assess" },
+    { name: "Svelte", category: "languages", status: "trial" },
+    { name: "Vue", category: "languages", status: "hold" },
     // Add more items as needed
 ];
 // Create a new TechRadar instance using default config

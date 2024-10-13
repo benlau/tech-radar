@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@benlau/tech-radar@0.0.1-alpha.0/dist/index.umd.min.js"></script>
+    <title>Tech Radar</title>
+</head>
+<body>
+    <div id="radar1"></div>
+    <Button id="download1">Download</Button>
+    <script>
+        const items = [
+            {
+                name: "hold",
+                category: "platform & frameworks",
+                status: "hold",
+            },
+            {
+                name: "adopt",
+                category: "tools",
+                status: "adopt",
+            },
+            {
+                name: "assess",
+                category: "techniques",
+                status: "assess",
+            },
+            {
+                name: "trial",
+                category: "languages",
+                status: "trial",
+            }
+        ]
+        const techRadar1 = new TechRadar.TechRadar(items);
+        techRadar1.render("#radar1")
+        document.getElementById("download1").addEventListener("click", () => {
+            techRadar1.downloadSVG();
+        });
+    </script>
+</body>
+</html>

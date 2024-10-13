@@ -52,7 +52,7 @@ const FULL_BLIP_ITEMS: BlipItem[] = [
   },
   {
     name: "ray",
-    category: "languages & frameworks",
+    category: "languages",
     status: "trial",
     angle: 0.8,
   },

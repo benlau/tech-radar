@@ -2,6 +2,14 @@
 
 This library provides a customizable Tech Radar visualization tool. It allows you to create and render a tech radar chart with configurable blips, categories, and statuses.
 
+Full Size Tech Radar
+
+![image](https://github.com/user-attachments/assets/0ddae351-7260-43dd-bc97-3c4e3fadba0a)
+
+Partial Tech Radar
+
+![image](https://github.com/user-attachments/assets/aadf0cbd-64aa-4b8a-b658-df04cc52a36a)
+
 ## Installation
 
 To install the Tech Radar library, use npm:

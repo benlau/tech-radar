@@ -128,12 +128,7 @@ export class TechRadar {
         { name: "trial", color: "#9ebcd6", length: 60 },
         { name: "adopt", color: "#8eafd2", length: 60 },
       ],
-      categories: [
-        "platform & frameworks",
-        "tools",
-        "techniques",
-        "languages and frameworks",
-      ],
+      categories: ["platform & frameworks", "tools", "techniques", "languages"],
       statusLabelWidth: 72,
       statusLabelHeight: 24,
       statusLabelRadius: 5,

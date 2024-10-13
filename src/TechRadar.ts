@@ -39,36 +39,57 @@ export interface TechRadarStatus {
 }
 
 export interface TechRadarConfig {
+  // Size of the canvas for the Tech Radar
   canvasSize: { width: number; height: number };
+  // Determines how the radar scales within its container. It can be "none" | "scaleToFit"
   scaleMode: keyof typeof TechRadarScaleMode;
 
+  // Width of the radar's circular lines
   strokeWidth: number;
+  // Color of the radar's circular lines
   strokeColour: string;
 
+  // Default color of the blips
   blipColor: string;
+  // Color of blips when hovered over
   blipHoverColor: string;
+  // Font size for blip labels
   blipFontSize: number;
 
+  // Size of the blip points
   blipPointSize: number;
+  // Distance between blip points and their labels
   blipLabelOffset: number;
 
+  // Define the statuses used in the radar
   statuses: TechRadarStatus[];
 
+  // Position of the status labels relative to the radar
   statusLabelPosition: "up" | "down" | "left" | "right";
+  // Whether to show status labels
   statusLabelVisible: boolean;
 
+  // Width of the status label
   statusLabelWidth: number;
+  // Height of the status label
   statusLabelHeight: number;
+  // Corner radius of the status label
   statusLabelRadius: number;
+  // Font size of the status label text
   statusLabelFontSize: number;
+  // Color of the status label text
   statusLabelColor: string;
+  // Background color of the status label
   statusLabelBackgroundColor: string;
 
-  // Move the center to specific position
+  // Move the center of the radar to a specific position
   centerOffset: { x: number; y: number };
 
+  // Categories to be displayed on the radar
   categories: string[];
+  // Color of the category text
   categoryColor: string;
+  // Whether to show category labels
   categoryVisble: boolean;
 }
 

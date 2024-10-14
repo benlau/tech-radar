@@ -29,7 +29,7 @@ If you prefer not to use npm, you can also include the Tech Radar library direct
 Add the following script tag to your HTML file:
 
 ```
-<script src="https://unpkg.com/@benlau/tech-radar@0.0.1-alpha.0/dist/index.umd.min.js"></script>
+<script src="https://unpkg.com/@benlau/tech-radar@0.1.0/dist/index.umd.min.js"></script>
 ```
 
 ## Usage

@@ -1,2 +1,0 @@
-# techradar
-TechRadar Renderer

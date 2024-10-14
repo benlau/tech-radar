@@ -1,0 +1,32 @@
+name: Build and Pack
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "20.x"
+      - name: CI
+        run: |
+          npm install
+          make lint
+          make build
+          make pack
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pkg
+          path: |
+            *.tgz
+
